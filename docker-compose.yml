@@ -1,0 +1,11 @@
+version: '3'
+services:
+  website:
+    image: app
+    container_name: website
+    ports:
+      - 81:80
+    volumes:
+      - /Users/dinhnhatbao/Downloads/Assignments/Day07_AWS-ECS-EKS-ECR/code-sample-app/templates:/path/to/app/templates
+    restart: always
+
